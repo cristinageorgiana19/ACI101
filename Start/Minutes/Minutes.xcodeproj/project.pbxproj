@@ -16,6 +16,12 @@
 		D3AA8CFD20363C2E00222B39 /* EditEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AA8CFC20363C2E00222B39 /* EditEntryViewController.swift */; };
 		D3AA8CFF2037552800222B39 /* FileEntryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AA8CFE2037552800222B39 /* FileEntryStore.swift */; };
 		E735BA1023FAB5BA0093647C /* MinutesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E735BA0F23FAB5BA0093647C /* MinutesTests.swift */; };
+		E735BA1E23FABBAB0093647C /* AppCenterDistribute.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E735BA1823FABBA90093647C /* AppCenterDistribute.framework */; };
+		E735BA1F23FABBAB0093647C /* AppCenterPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E735BA1923FABBA90093647C /* AppCenterPush.framework */; };
+		E735BA2023FABBAB0093647C /* AppCenterDistributeResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E735BA1A23FABBA90093647C /* AppCenterDistributeResources.bundle */; };
+		E735BA2123FABBAB0093647C /* AppCenterCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E735BA1B23FABBAA0093647C /* AppCenterCrashes.framework */; };
+		E735BA2223FABBAB0093647C /* AppCenterAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E735BA1C23FABBAB0093647C /* AppCenterAnalytics.framework */; };
+		E735BA2323FABBAB0093647C /* AppCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E735BA1D23FABBAB0093647C /* AppCenter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +48,12 @@
 		E735BA0D23FAB5BA0093647C /* MinutesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinutesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E735BA0F23FAB5BA0093647C /* MinutesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinutesTests.swift; sourceTree = "<group>"; };
 		E735BA1123FAB5BA0093647C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E735BA1823FABBA90093647C /* AppCenterDistribute.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterDistribute.framework; sourceTree = "<group>"; };
+		E735BA1923FABBA90093647C /* AppCenterPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterPush.framework; sourceTree = "<group>"; };
+		E735BA1A23FABBA90093647C /* AppCenterDistributeResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppCenterDistributeResources.bundle; sourceTree = "<group>"; };
+		E735BA1B23FABBAA0093647C /* AppCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterCrashes.framework; sourceTree = "<group>"; };
+		E735BA1C23FABBAB0093647C /* AppCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterAnalytics.framework; sourceTree = "<group>"; };
+		E735BA1D23FABBAB0093647C /* AppCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenter.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +61,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E735BA1E23FABBAB0093647C /* AppCenterDistribute.framework in Frameworks */,
+				E735BA2323FABBAB0093647C /* AppCenter.framework in Frameworks */,
+				E735BA1F23FABBAB0093647C /* AppCenterPush.framework in Frameworks */,
+				E735BA2223FABBAB0093647C /* AppCenterAnalytics.framework in Frameworks */,
+				E735BA2123FABBAB0093647C /* AppCenterCrashes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +82,7 @@
 		D3048F1B202E2B2D00D45D7E = {
 			isa = PBXGroup;
 			children = (
+				E735BA1723FABB470093647C /* AppCenter */,
 				D3048F26202E2B2D00D45D7E /* Minutes */,
 				E735BA0E23FAB5BA0093647C /* MinutesTests */,
 				D3048F25202E2B2D00D45D7E /* Products */,
@@ -103,6 +121,19 @@
 				E735BA1123FAB5BA0093647C /* Info.plist */,
 			);
 			path = MinutesTests;
+			sourceTree = "<group>";
+		};
+		E735BA1723FABB470093647C /* AppCenter */ = {
+			isa = PBXGroup;
+			children = (
+				E735BA1D23FABBAB0093647C /* AppCenter.framework */,
+				E735BA1C23FABBAB0093647C /* AppCenterAnalytics.framework */,
+				E735BA1B23FABBAA0093647C /* AppCenterCrashes.framework */,
+				E735BA1823FABBA90093647C /* AppCenterDistribute.framework */,
+				E735BA1A23FABBA90093647C /* AppCenterDistributeResources.bundle */,
+				E735BA1923FABBA90093647C /* AppCenterPush.framework */,
+			);
+			path = AppCenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +222,7 @@
 				D3048F32202E2B2D00D45D7E /* LaunchScreen.storyboard in Resources */,
 				D3048F2F202E2B2D00D45D7E /* Assets.xcassets in Resources */,
 				D3048F2D202E2B2D00D45D7E /* Main.storyboard in Resources */,
+				E735BA2023FABBAB0093647C /* AppCenterDistributeResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +399,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8MKEJ9N9F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppCenter",
+				);
 				INFOPLIST_FILE = Minutes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.Minutes;
@@ -382,6 +418,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8MKEJ9N9F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppCenter",
+				);
 				INFOPLIST_FILE = Minutes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.Minutes;
